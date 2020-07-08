@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="449.0" prefWidth="530.0" style="-fx-background-color: #08AEEA; -fx-background-image: linear-gradient(333deg, #08AEEA 0%, #2AF598 100%);">
+         <children>
+            <Button layoutX="187.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnCalcular" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: #59bd74;" text="Calcular" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button layoutX="239.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnLimpar" style="-fx-background-color: #e81f05;" text="limpar" textFill="WHITE" />
+            <Label layoutX="171.0" layoutY="14.0" prefHeight="27.0" prefWidth="188.0" text="Calculador de Bhaskara">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="49.0" text="x² +">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="306.0" layoutY="49.0" text="x +">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="424.0" layoutY="49.0" text="= 0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="98.0" text="Delta:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="144.0" text="x¹:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="192.0" text="x²:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="248.0" text="Concavidade:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultadoDelta" layoutX="118.0" layoutY="102.0" prefHeight="27.0" prefWidth="106.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="resultadoX1" layoutX="98.0" layoutY="148.0" prefHeight="27.0" prefWidth="385.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultadoX2" layoutX="98.0" layoutY="196.0" prefHeight="27.0" prefWidth="385.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultadoConcavidade" layoutX="211.0" layoutY="252.0" prefHeight="27.0" prefWidth="250.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="numero2" layoutX="230.0" layoutY="54.0" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 30px;" />
+            <TextField fx:id="numero3" layoutX="348.0" layoutY="54.0" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 30px;" />
+            <TextField fx:id="numero1" layoutX="98.0" layoutY="54.0" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 30px;" />
+            <Label fx:id="erro" layoutX="191.0" layoutY="418.0" textFill="#ee0101" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
